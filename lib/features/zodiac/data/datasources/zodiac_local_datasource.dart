@@ -1,7 +1,7 @@
 import '../../domain/entities/zodiac_sign.dart';
 
 class ZodiacLocalDatasource {
-  static List<ZodiacSign> getAllZodiacSigns() {
+  List<ZodiacSign> getAllZodiacSigns() {
     return [
       const ZodiacSign(
         name: 'Koç',

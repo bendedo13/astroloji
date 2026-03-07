@@ -14,7 +14,8 @@ class ZodiacRepositoryImpl implements ZodiacRepository {
 
   @override
   String getDailyPrediction(ZodiacSign sign) {
-    final index = DateTime.now().microsecond % sign.dailyPredictions.length;
+    final now = DateTime.now();
+    final index = (now.year * 366 + now.month * 31 + now.day) % sign.dailyPredictions.length;
     return sign.dailyPredictions[index];
   }
 }
