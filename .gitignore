@@ -46,8 +46,9 @@ app.*.map.json
 # Gradle user home
 .gradle-user-home/
 
-# Signing
-**/android/key.properties
-**/android/**/keystore/
-**/*.jks
-**/*.keystore
+# Signing - keystore KALICI olarak git'te takip ediliyor
+# UYARI: Bu dosyalar kaybedilirse Google Play'e yuklenemez!
+# **/android/key.properties
+# **/android/**/keystore/
+# **/*.jks
+# **/*.keystore
