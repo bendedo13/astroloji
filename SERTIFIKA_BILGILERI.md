@@ -41,7 +41,16 @@
 
 ## Build Komutu
 
-> **Not:** Java 17 kurulu ve `JAVA_HOME` ortam değişkeni ayarlı olmalıdır.
+### Yöntem 1: Build Script (Önerilen - Java hatasını önler)
+
+```powershell
+cd C:\Users\win10\Desktop\astroloji\astroloji-3
+.\build-release.ps1
+```
+
+### Yöntem 2: Manuel
+
+> **Not:** "supplied javaHome invalid" hatası alırsanız: `C:\Program Files\Eclipse Adoptium\jdk-17.0.18.8-hotspot` klasörü bozuk olabilir (sadece lib var, bin yok). Yeniden adlandırın: `jdk-17.0.18.8-hotspot_broken`
 
 ```bash
 cd C:\Users\win10\Desktop\astroloji\astroloji-3 && flutter clean && flutter pub get && flutter build appbundle --release
