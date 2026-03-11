@@ -41,8 +41,10 @@
 
 ## Build Komutu
 
+> **Not:** Java 17 kurulu ve `JAVA_HOME` ortam değişkeni ayarlı olmalıdır.
+
 ```bash
-cd C:\Users\win10\Desktop\astroloji && flutter clean && flutter pub get && flutter build appbundle --release
+cd C:\Users\win10\Desktop\astroloji\astroloji-3 && flutter clean && flutter pub get && flutter build appbundle --release
 ```
 
 ## AAB Çıktı Yolu
